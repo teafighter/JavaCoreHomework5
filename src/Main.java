@@ -6,11 +6,11 @@ public class Main {
         try {
             checkCredentials("swht123", "werg", "werg");
         } catch (WrongPasswordException e) {
-            System.out.println("Пароль не соответствует требованиям или не пароли не совпадают");
+            System.out.println("Пароль может содержать в себе только латинские буквы, цифры и знак подчеркивания. Он должен быть равен или меньше 20 символов. Пароль и его проверка должны совпадать.");
         } catch (WrongLoginException e) {
-            System.out.println("Логин не соответствует требованиям");
+            System.out.println("Логин может содержать в себе только латинские буквы, цифры и знак подчеркивания. Он должен быть равен или меньше 20 символов");
         } finally {
-            System.out.println("Проверка завершена");
+            System.out.println("Проверка завершена.");
         }
     }
 
